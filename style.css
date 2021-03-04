@@ -51,10 +51,20 @@ body {
   cursor: pointer;
   border-radius: 10px;
   padding: 15px 30px;
-  margin: 5px;
+  margin: 5px 10px;
   font-family: inherit;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease 0s;
+}
+
+.save-button {
+  background-color: #160c28;
+  color: #fff;
+}
+
+.send-button {
+  background-color: #de6962;
+  color: #fff;
 }
 
 .main-button:hover {
@@ -65,9 +75,8 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 75vh;
   grid-column-gap: 30px;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .left,
@@ -76,17 +85,46 @@ body {
   flex-direction: column;
 }
 
+.left label {
+  margin-bottom: 7px;
+}
+
+.right label {
+  margin-bottom: 7px;
+}
+
 .confidential {
   font-size: 10px;
   color: #414544;
+  margin-bottom: 20px;
 }
 
-.left input {
+.input {
   font-family: inherit;
+  font-size: 11px;
+  border: 1px solid var(--gray);
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.right input {
-  font-family: inherit;
+.add-rss {
+  display: flex;
+}
+
+.rss-input {
+  flex: 1;
+}
+
+.add-button {
+  background-color: #7eab78;
+  color: #fff;
+}
+
+.rss-button {
+  margin-top: 70px;
+  text-align: left;
+  background-color: #fff;
+  width: 70%;
 }
 
 .footer {
@@ -102,4 +140,8 @@ body {
 
 .media {
   text-decoration: none;
+}
+
+.icon {
+  margin: 0 5px;
 }

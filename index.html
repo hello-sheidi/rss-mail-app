@@ -17,7 +17,7 @@
       <div class="title">
         <a href="/">
           <svg
-            class="icon wifi-icon"
+            class="wifi-icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -44,6 +44,7 @@
       <div class="left">
         <label for="email">Email address</label>
         <input
+          class="input"
           type="email"
           name="email"
           id="email"
@@ -53,23 +54,30 @@
           Feel safe, We'll never share your email with anyone else
         </p>
         <label for="message">Message</label>
-        <input
+        <textarea
+          class="input"
           type="text"
+          rows="12"
+          cols="4"
           name="message"
           id="message"
           placeholder="Your Message Goes Here"
-        />
+        ></textarea
+        >s
       </div>
       <div class="right">
         <label for="url">Rss URL</label>
-        <input
-          type="url"
-          name="url"
-          id="url"
-          placeholder="htttps://example.site/rss.xml"
-        />
-
-        <button type="button" class="main-button">Rss</button>
+        <div class="add-rss">
+          <input
+            class="input rss-input"
+            type="url"
+            name="url"
+            id="url"
+            placeholder="htttps://example.site/rss.xml"
+          />
+          <button type="button" class="main-button add-button">Add</button>
+        </div>
+        <button type="button" class="main-button rss-button">Rss</button>
       </div>
     </div>
     <footer class="footer">
